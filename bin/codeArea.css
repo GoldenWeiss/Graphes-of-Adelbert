@@ -1,0 +1,121 @@
+
+.root {
+	-fx-base: rgb(65, 65, 65);
+	-fx-text-fill: white;
+}
+.btnClose {
+	-fx-background-radius: 0;
+	-fx-border-radius: 0;
+	-fx-background-color: transparent;
+}
+.btnClose:hover {
+	-fx-background-color: red;
+}
+.btnClose:pressed {
+	-fx-background-color: rgb(170, 33, 35);
+}
+.btnBar {
+	-fx-background-radius: 0;
+	-fx-border-radius: 0;
+	-fx-background-color: transparent;
+	
+}
+.btnBar:hover {
+	-fx-background-color: rgb(57, 57, 57);
+}
+.btnBar:pressed {
+	-fx-background-color: rgb(75, 75, 75);
+}
+.btnCloseIco {
+	-icons-color : white;
+	-fx-fill: white;
+}
+.icoVerticalHider {
+	-icons-color : white;
+	-fx-fill: white;
+}
+.menuBar {
+	-fx-background-color: transparent;
+}
+.menuBar .jfx-button {
+	-fx-background-color: rgb(45, 45, 45);
+	-fx-background-radius: 0;
+	-fx-text-fill: white;
+}
+.topStackPane {
+	-fx-background-color: rgb(45, 45, 45);
+}
+
+.icoTabRuby {
+	-icons-color : red;
+	-fx-fill: red;
+	-glyph-name: "RUBY";	
+}
+.tab {
+	-fx-background-color: rgb(45, 45, 45);
+	-fx-pref-height: 25;
+}
+.tab .tab-label {
+	-fx-text-fill: white; 
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+   -fx-background-color: rgb(65, 65, 65);
+}
+
+#codearea {
+	-fx-background-color: rgb(45, 45, 45);
+}
+#codearea .caret {
+    -fx-stroke: white;
+}
+
+#codearea .text {
+	
+	-fx-fill: white;
+	-fx-font-size:18px;
+}
+#codearea .lineno{
+	
+	-fx-background-color: rgb(45, 45, 45);
+	-fx-font-size:18px;
+}
+
+#codearea .lineno .text{
+	
+	-fx-fill: grey;
+}
+.paragraph-box:has-caret {
+	-fx-background-color: rgb(55, 55, 55);
+}
+
+#codearea .brack {
+    -fx-fill: rgb(255,86,0);
+}
+
+#codearea .keyword {
+    -fx-fill: red;
+}
+
+#codearea .semicolon {
+    -fx-fill : rgb(255,86,0);
+}
+#codearea .string {
+    -fx-fill: green;
+}
+#codearea .comment {
+	-fx-fill: rgb(145,165,201);
+}
+#codearea .number {
+	-fx-fill: yellow;
+}
+#codearea .paren {
+    -fx-fill: rgb(120, 120, 120);
+}
+
+#codearea .brace {
+    -fx-fill: rgb(0,128,255);
+}
+#codearea .null {
+}
+

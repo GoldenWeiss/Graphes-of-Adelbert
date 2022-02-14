@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@../../../styles/codeArea.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane fx:id="borderPane1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+         <center>
+            <StackPane fx:id="stackPane2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <StackPane fx:id="stackPane1" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="120.0" prefWidth="700.0" styleClass="topStackPane" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="90.0" StackPane.alignment="BOTTOM_LEFT" />
+                  <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" styleClass="menuBar" StackPane.alignment="TOP_LEFT">
+                     <children>
+                        <JFXButton fx:id="jfxFile" prefHeight="30.0" text="File" />
+                        <JFXButton fx:id="jfxHome" prefHeight="30.0" text="Home" />
+                        <JFXButton fx:id="jfxEdit" prefHeight="30.0" text="Edit" />
+                        <JFXButton fx:id="jfxGraphs" prefHeight="30.0" text="Graphs" />
+                        <JFXButton fx:id="jfxScene" prefHeight="30.0" text="Scene" />
+                        <JFXButton fx:id="jfxExport" prefHeight="30.0" text="Export" />
+                        <JFXButton fx:id="jfxWindows" prefHeight="30.0" text="Windows" />
+                        <JFXButton fx:id="jfxHelp" prefHeight="30.0" text="Help" />
+                        <HBox alignment="TOP_RIGHT" prefWidth="100.0">
+                           <children>
+                              <Button contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" styleClass="btnBar">
+                                 <graphic>
+                                    <MaterialIconView glyphName="KEYBOARD_ARROW_UP" size="16" styleClass="icoVerticalHider" />
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <Button fx:id="jfxClose" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#close" prefHeight="22.0" prefWidth="50.0" styleClass="btnClose" StackPane.alignment="TOP_RIGHT">
+                     <graphic>
+                        <MaterialIconView glyphName="CLOSE" size="16" styleClass="btnCloseIco" />
+                     </graphic>
+                     <StackPane.margin>
+                        <Insets right="2.0" />
+                     </StackPane.margin>
+                  </Button>
+                  <Button contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#hide" prefHeight="22.0" prefWidth="50.0" styleClass="btnBar" StackPane.alignment="TOP_RIGHT">
+                     <graphic>
+                        <MaterialIconView glyphName="REMOVE" size="12" styleClass="btnCloseIco" />
+                     </graphic>
+                     <StackPane.margin>
+                        <Insets right="52.0" />
+                     </StackPane.margin>
+                  </Button>
+               </children>
+            </StackPane>
+         </top>
+      </BorderPane>
+   </children>
+</StackPane>
